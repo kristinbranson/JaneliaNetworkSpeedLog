@@ -14,7 +14,7 @@ import platform
 
 def main():
 
-    osname = platform.system
+    osname = platform.system()
     
     timecode = '%Y%m%dT%H%M%S.%f'
     npings = 10
