@@ -51,7 +51,7 @@ def main():
             cmdfailure = 0
 
             # windows and linux have different ping outputs
-            if os.name == 'nt':
+            if osname == 'Windows':
                 m = re.search(r'Received = (\d+).*Lost = (\d+).*Average = ((\d|\.)+)ms',res.stdout.decode("utf-8"), re.DOTALL )
                 if m is None:
                     parsefailure = 1
